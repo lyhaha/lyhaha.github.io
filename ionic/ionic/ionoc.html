@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./ionic.css">
+</head>
+<body>
+<!--头部-->
+<!--如果底部有标题, 任何按钮都会自动地被放在标题的两侧,如:-->
+<!--<div class="bar bar-header bar-positive">-->
+    <!--<button class="button button-clear">Left</button>-->
+    <!--<div class="title">Title</div>-->
+    <!--<button class="button button-clear">Right</button>-->
+<!--</div>-->
+<div class="bar bar-header">
+    <button class="button button-icon icon ion-navicon"></button>
+    <div class="h1 title">Header Buttons</div>
+    <button class="button button-clear button-positive">Edit</button>
+</div>
+<!--副标题-->
+<!--<div class="bar bar-subheader">-->
+    <!--<h2 class="title">Sub Header</h2>-->
+<!--</div>-->
+<div style="margin:50px 0">
+    <!--按钮图标-->
+    <!--<button class="button">-->
+        <!--<i class="icon ion-loading-c"></i> Loading...-->
+    <!--</button>-->
+
+    <!--<button class="button icon-left ion-home">Home</button>-->
+
+    <!--<button class="button icon-left ion-star button-positive">Favorites</button>-->
+
+    <!--<a class="button icon-right ion-chevron-right button-calm">Learn More</a>-->
+
+    <!--<a class="button icon-left ion-chevron-left button-clear button-dark">Back</a>-->
+
+    <!--<button class="button icon ion-gear-a"></button>-->
+
+    <!--<a class="button button-icon icon ion-settings"></a>-->
+
+    <!--<a class="button button-outline icon-right ion-navicon button-balanced">Reorder</a>-->
+    <!--列表图标-->
+    <div class="list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-email"></i>
+            Check mail
+        </a>
+
+        <a class="item item-icon-left item-icon-right" href="#">
+            <i class="icon ion-chatbubble-working"></i>
+            Call Ma
+            <i class="icon ion-ios-telephone-outline"></i>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-mic-a"></i>
+            Record album
+            <span class="item-note">
+      Grammy
+    </span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-person-stalker"></i>
+            Friends
+            <span class="badge badge-assertive">0</span>
+        </a>
+        <!--使用 item-button-right 或 item-button-left 类将按钮放在列表项中。-->
+        <div class="item item-button-right">
+            Call Ma
+            <button class="button button-positive">
+                <i class="icon ion-ios-telephone"></i>
+            </button>
+        </div>
+        <!--使用 item-avatar 来创建一个带头像的列表.-->
+        <a class="item item-avatar" href="#">
+            <img src="venkman.jpg">
+            <h2>Venkman</h2>
+            <p>Back off, man. I'm a scientist.</p>
+        </a>
+        <!--item-thumbnail-left 类用于添加左侧对齐的缩略图， item-thumbnail-right 类用于添加右侧对齐的缩略图。-->
+        <a class="item item-thumbnail-left" href="#">
+            <img src="cover.jpg">
+            <h2>Pretty Hate Machine</h2>
+            <p>Nine Inch Nails</p>
+        </a>
+        <!--Card Images(带图片卡片)-->
+        <!--卡片中使用图片，效果会更好，实例如下：-->
+        <div class="list card">
+            <div class="item item-avatar">
+                <img src="avatar.jpg">
+                <h2>Pretty Hate Machine</h2>
+                <p>Nine Inch Nails</p>
+            </div>
+
+            <div class="item item-image">
+                <img src="cover.jpg">
+            </div>
+
+            <a class="item item-icon-left assertive" href="#">
+                <i class="icon ion-music-note"></i>
+                Start listening
+            </a>
+            <!--input表单的使用-->
+            <label class="item item-input">
+                <span class="input-label">Username</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password">
+            </label>
+            <!--Inset Inputs(内嵌输入域)-->
+            <!--使用 list-inset 设置内嵌实体列表。 使用 item-input-inset 样式可以内嵌一个按钮。-->
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="Email">
+                </label>
+                <button class="button button-small">
+                    Submit
+                </button>
+            </div>
+            <ul class="list">
+                <li class="item item-toggle">
+                    HTML5
+                    <label class="toggle toggle-assertive">
+                        <input type="checkbox">
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+            <!--Range(滑块控件)-->
+            <!--ionic Range 是一个滑块控件，-->
+            <!--ionic 为 Range 提供了很多种默认的样式。而且你可以在许多种元素里使用它比如列表或者 Card 。-->
+            <div class="item range range-positive">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volume" min="0" max="100" value="33">
+                <i class="icon ion-ios-sunny"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="tabs tabs-icon-top">
+    <a class="tab-item">
+        <i class="icon ion-home"></i>
+        Home
+    </a>
+    <a class="tab-item">
+        <i class="icon ion-star"></i>
+        Favorites
+    </a>
+    <a class="tab-item">
+        <i class="icon ion-gear-a"></i>
+        Settings
+    </a>
+</div>
+<!--<div class="bar bar-footer bar-dark">-->
+    <!--<h1 class="title">footer</h1>-->
+    <!--&lt;!&ndash;此外，如果底部没有标题，但是又需要右边的按钮，你需要在右侧按钮添加 pull-right如&ndash;&gt;-->
+    <!--<button class="button button-calm pull-right">right</button>-->
+<!--</div>-->
+</body>
+</html>
