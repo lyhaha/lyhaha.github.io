@@ -1,0 +1,53 @@
+ header{position: fixed;top: 0;left: 0;height: 100px;z-index:10;width:100%;}
+*{padding: 0;margin: 0;font-size: 30px;font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei"}
+html body .content{height: 100%;width: 100%}
+body{background-color: #ccc;}
+ ul{list-style: none;}
+ footer{position: fixed;left: 0;bottom: 0;z-index: 10;background-color:#fff;
+     display: flex;justify-content: space-around;text-align: center;height: 120px;line-height:50px;width: 100%;border-top:1px solid #ccc; ;
+ }
+ #home-head{background-color: #fff;}
+ a{text-decoration: none;color: #000}
+ #home-head #search-H{display: flex;flex-direction: row;justify-content: space-around;
+     margin-top: 20px;position: relative;font-size: 30px}
+ #home-head #search-H i{position: absolute;left: 3%;top:25%}
+ #home-head #search-H input[type='submit']{background-color: #0a9dc7;color: #fff;border: none;
+ width: 15%;border-radius: 20px;font-size: 30px}
+ .home #inp{ border: 1px solid #ccc;border-radius:60px;width: 75%;height: 60px;padding-left: 6%;
+    outline:medium;background-color: #eee;font-size: 30px;
+}
+
+.home .shuffling{overflow: hidden;margin-top: 100px; position: relative;}
+ .home #imgs li{width: 100%}
+.home .shuffling ul{display: flex;flex-direction: row;}
+.home #dots{position: absolute;width:200px;left: calc(50% + 100px);top:250px; }
+.home #dots li{height: 20px;width: 20px;border-radius: 10px;background-color: #fff;margin-left: 20px;
+}
+.home #dots .active{background: orangered;}
+.home .iconList{display: flex;flex-flow: row wrap;width: 100%;background-color: #fff;}
+.home .iconList li{ text-align: center; width: 20%;font-size: 30px;}
+.home .list-h{display: flex;justify-content: space-between;background-color: #fff;height: 60px;align-items: center;margin-top: 20px;}
+.home .list-h h3{flex:1;padding-left: 10px;}
+.home .list-h span{height: 20px;width: 10px;background-color: #00b3ee;}
+.home #min-list li{display: flex;background-color: #fff;padding: 20px;}
+.home #min-list li div{background-color: #00b3ee;color: #fff;border-radius: 0 20px;height: 40px;line-height:40px;width: 100px; text-align: center;margin:0 5px;}
+.home .invite li{background-color: #fff;height: 100px;}
+.home .invite li h3{color: #00b3ee;}
+.home .invite li div:last-child{display: flex;justify-content: space-between;}
+.home .resource li{background-color: #fff;display: flex;padding: 10px;}
+.home .resource li:last-child{margin-bottom: 150px;}
+.home .resource li>div{display: flex;flex-flow: column;justify-content: space-around;padding: 5px;}
+
+
+ header #talk-head{background-color: #2aabd2;text-align: center;line-height: 100px;color: #fff;font-size: 50px;}
+ header #talk-nav{display: flex;}
+ header #talk-nav>div{flex: 1;border: 1px solid #ccc;background-color: #fff;height: 100px;line-height: 100px;text-align: center}
+ header #talk-search{width: 100%;height:100px;padding: 10px;background-color: #eee;}
+ header #talk-search input{text-align: center;height: 60px;line-height: 60px;border-radius: 30px;border: 1px solid #ccc;
+ width: 90%;outline:medium;margin: 20px 5%;
+ }
+ #talk-list{margin-top: 320px;background-color: #fff;}
+ #talk-list #talk-tip{background-color: #ff3b30;color: #fff;height: 40px;line-height:40px;width: 120px;text-align: center;border-radius: 0 30px;}
+ #talk-list .talk-man{display: flex;align-items: center}
+ #talk-list .talk-man-nav{display: flex;}
+ #talk-list .talk-man-nav>div{border: 1px solid #ccc;flex: 1;height: 100px;text-align: center;line-height: 100px;}
