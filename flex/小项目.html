@@ -346,23 +346,23 @@
     }
 
     function home() {
-        var n=0;
+
         var shuffling=document.querySelector('.shuffling');
         var imgs=document.querySelector('#imgs');
         var dots=document.querySelector('#dots');
-
+        var n=0;
         setInterval(function () {
             n++;
-//            imgs.style.transition='all 2s';
+            imgs.style.transition='all 2s';
             if(n==4){
                 n=0;
-//                imgs.style.transition='';
+                imgs.style.transition='';
             }
             dots.childNodes.forEach(function (e) {
                 e.classList.remove('active')
             });
             dots.children[n].classList.add('active');
-            imgs.style.transform='translateX('+(n*(-100))+'%)'
+            imgs.style.transform='translateX('+(n*(-25))+'%)'
         },3000)
     }
 </script>
